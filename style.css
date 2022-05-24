@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300;400;600;700&family=Varela&display=swap');   
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* WRAPPER */
+.wrapper{
+    width: 600px;
+    height: 600px;
+    margin-top: 150px;;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: black;
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+    font-family: 'Varela', sans-serif;
+    font-size: 12px;
+}
+/* HEADER */
+.header{
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 10px 25px 0px grey;
+}
+.header h3{
+    color: rgb(91, 185, 223);
+    margin-bottom: 13px;
+}
+.header h4{
+    color: rgb(228, 208, 95);
+    margin-bottom: 13px;
+
+}
+.header p{
+    color: rgb(114, 84, 84);
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+/* SECTION */
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.section-1{
+    background-color: rgb(25, 172, 230);
+    padding: 30px;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-collapse: collapse;
+}
+.section-1 a{
+    background-color: lawngreen;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.section-1 h1{
+    display: inline;
+}
+.section-1 .p1{
+    display: inline;
+    color: rgb(114, 84, 84);
+}
+.section-2{
+    background-color: skyblue;
+    padding: 30px;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-collapse: collapse;
+}
+.section-2 p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 20px;
+}
+
+
+
+/* MEDIA-QUERY */
+@media(max-width: 768px){
+    html,body{
+        max-width: 600px;
+        overflow: hidden;
+    }
+    .wrapper{
+        margin-top: 30px;
+        transform: none;
+        margin-left: 25px;
+        width: 450px;
+        height: 700px;
+    }
+    .section{
+        display: block;
+        padding-bottom: 20px;
+    }
+    .section-1{
+        border-bottom-left-radius: 0px;
+    }
+    .section-2{
+        border-bottom-right-radius: 0px;
+    }
+}
